@@ -110,3 +110,42 @@ footer p {
     text-decoration: underline; /* Removes underline */
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Align children (text and image) on opposite sides */
+    align-items: start; /* Align children to the top */
+    padding: 20px;
+}
+
+.text-block {
+    flex: 1; /* Takes up remaining space not used by image */
+    padding-right: 10px; /* Optional: Adds some space between text and image */
+}
+
+.image-block {
+    flex: 0 1 200px; /* Do not grow, but can shrink, fix initial width */
+    height: 200px; /* Adjust height as necessary */
+}
+
+.profile-photo {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust height as needed */
+    margin: 20px;
+}
+
+.profile-photo {
+    width: 150px; /* Set the size of the photo */
+    height: 150px; /* Make sure width and height are equal for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* This will cover the area of the box without distorting the aspect ratio */
+    margin-bottom: 20px; /* Adds space between the photo and the links */
+}

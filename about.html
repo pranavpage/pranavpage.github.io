@@ -29,8 +29,12 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 My Website. All rights reserved.</p>
+            <p>© 2024 Pranav Page. All rights reserved.</p>
+            <p id="lastUpdated">Last Updated: </p>
         </div>
     </footer>
+    <script>
+        document.getElementById('lastUpdated').textContent += document.lastModified;
+    </script>
 </body>
 </html>
