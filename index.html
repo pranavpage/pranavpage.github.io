@@ -22,15 +22,35 @@
 
     <main class="container">
         <section>
-            <h2>Welcome</h2>
-            <p>This is the home page of my personal website.</p>
+            <div>
+                <h2>hi!</h2>
+                <p>
+                    I'm Pranav. 
+                </p>
+                <p>
+                    I'm a Modeling Systems Engineer at Qualcomm, 
+                    where I focus on creating and fine-tuning receiver algorithms for WiFi detection, 
+                    aiming to enhance wireless technology performance.
+                </p>
+                <p>    
+                    I graduated from IIT Bombay in June 2023 with a B.Tech and an M.Tech in Electrical Engineering, 
+                    specializing in communications and signal processing. My keen interests lie in IoT, machine learning, algorithms, and systems engineering. 
+                    I love diving into new challenges and turning complex problems into elegant solutions.  
+                </p>
+            </div>
+            
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2024 My Website. All rights reserved.</p>
+            <p>© 2024 Pranav Page. All rights reserved.</p>
+            <p id="lastUpdated">Last Updated: </p>
         </div>
     </footer>
+    <script>
+        document.getElementById('lastUpdated').textContent += document.lastModified;
+    </script>
+    
 </body>
 </html>
