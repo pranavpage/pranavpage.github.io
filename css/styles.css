@@ -149,3 +149,52 @@ footer p {
     object-fit: cover; /* This will cover the area of the box without distorting the aspect ratio */
     margin-bottom: 20px; /* Adds space between the photo and the links */
 }
+
+.black-and-white {
+    filter: grayscale(100%); /* Converts the image to black and white */
+}
+
+.section {
+    margin-bottom: 30px; /* Adds space between sections */
+    padding: 20px; /* Adds padding inside the sections */
+    background-color: #000; /* Light grey background for the section */
+    border-left: 5px solid #004d9f; /* Adds a blue left border to the section */
+}
+
+.entry {
+    margin-top: 10px; /* Adds space between entries within a section */
+    padding: 30px; /* Adds padding inside each entry */
+    background-color: #000; /* White background for entries to stand out from the section background */
+    border: 1px solid #ccc; /* Light grey border around each entry */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds subtle shadow to lift the entries off the page */
+}
+
+.icon-list {
+    list-style-type: none; /* Removes default list style */
+    padding: 0; /* Removes padding */
+    margin: 10px auto; /* Centers the list and adds vertical spacing */
+    display: flex; /* Displays list items inline */
+    justify-content: center; /* Centers the items horizontally in the container */
+    flex-wrap: wrap; /* Allows list items to wrap onto the next line */
+}
+
+.icon-list li {
+    margin: 5px; /* Spacing between items */
+    background-color: #000; /* Background color for each item */
+    border: 1px solid #fff; /* Border around each item */
+    border-radius: 5px; /* Rounded corners for the box */
+    display: flex; /* Uses flexbox for aligning content inside the box */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 5px 10px; /* Padding inside each box */
+}
+
+.icon-link {
+    text-decoration: none; /* Removes underline from links */
+    display: flex; /* Ensures the link content also aligns properly */
+    align-items: center; /* Centers the link content vertically */
+}
+
+.icon-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
