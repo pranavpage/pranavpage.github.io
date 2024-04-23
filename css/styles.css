@@ -28,6 +28,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto; /* Centering the container */
     overflow: hidden;
     padding: 20px; /* Padding around the content within the container */
+    display: flex; /* Uses flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Aligns children (image and text) in the center */
 }
 
 header {
@@ -113,8 +116,10 @@ footer p {
 .content-container {
     display: flex;
     justify-content: space-between; /* Align children (text and image) on opposite sides */
-    align-items: start; /* Align children to the top */
+    align-items: center;
     padding: 20px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .text-block {
